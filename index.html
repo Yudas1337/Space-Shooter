@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Game</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <header>Space Game</header>
+        <div class="game-wrapper">
+            <canvas id="canvas" tabindex="0"></canvas>
+            <div class="start" id="start">
+                <h1>Welcome to the Game</h1>
+                <h4>
+                    Hint : collect coins as fast as you can & reach 5k score to win
+                </h4>
+                <h5>Left/right keys to move</h5>
+                <button class="btn" onclick="startGame()">Play The Game</button>
+            </div>
+
+            <div class="ready">
+                <h2 id="be-ready">Get Ready On</h2>
+                <p id="timer">5</p>
+            </div>
+            <div class="stage2" id="stage2">
+                <h2 id="be-ready">Be Ready Stage 2</h2>
+                <p>New Object : Blue Coins ( Generate your Time ! )</p>
+            </div>
+            <div class="stage3" id="stage3">
+                <h2 id="be-ready">Be Ready Stage 3</h2>
+                <p>New Object : Bombs ( decrease your Time ! )</p>
+            </div>
+            <div class="stage4" id="stage4">
+                <h2 id="be-ready">Be Ready Stage 4</h2>
+                <p>New Object : Star Object ( Get to gain Bigger Score ! )</p>
+            </div>
+            <div class="rainbomb" id="rainbomb">
+                <h2 id="be-ready">Warning!!</h2>
+                <p>It's Raining Bomb Time</p>
+            </div>
+            <div class="newability" id="newability">
+                <h2 id="be-ready">New Skill Unlocked!!</h2>
+                <p>Now You can shoot the bomb now!</p>
+            </div>
+
+            <div class="finalstage" id="finalstage">
+                <h2 id="be-ready">Final Stage</h2>
+                <p>Less Coin , More Bomb . can you survive ??</p>
+            </div>
+            <div class="congratulations">
+                <h1 id="menang">You Lose!</h1>
+                <p id="finish">Your Final Score is :</p>
+
+                <button class="btn" onclick="window.location.reload()">
+                    Restart
+                </button>
+            </div>
+        </div>
+
+        <footer><br><br>
+            Developed with ♥ Javascripts. Copyrights Yudas Malabi
+        </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
